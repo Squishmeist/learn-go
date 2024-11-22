@@ -20,6 +20,12 @@ To run all tests, use:
 go test ./...
 ```
 
+### Run Tests Coverage
+
+```sh
+go test ./... -cover
+```
+
 ### Run Benchmarks
 
 To run benchmarks, use:
