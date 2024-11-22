@@ -4,26 +4,29 @@ This project follows the modules from [Learn Go with tests](https://quii.gitbook
 
 ## Setup
 
-To get started, install `godoc`:
+To get started, install `godoc` and `errcheck`:
 
 ```sh
 go install golang.org/x/tools/cmd/godoc@latest
+go install github.com/kisielk/errcheck@latest
 ```
 
 ## Commands
 
-### Run Tests
+### Run Tests with Coverage
 
 To run all tests, use:
 
 ```sh
-go test ./...
+go test ./... -cover
 ```
 
-### Run Tests Coverage
+### Run Error Check
+
+To check error handling, run:
 
 ```sh
-go test ./... -cover
+errcheck .
 ```
 
 ### Run Benchmarks
